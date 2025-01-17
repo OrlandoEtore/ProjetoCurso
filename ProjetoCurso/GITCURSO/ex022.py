@@ -1,6 +1,7 @@
 import string
 
 nome = input('')
+nome = input('')
 mai = nome.upper()
 mins = nome.lower()
 sesp =nome.replace(' ','')
