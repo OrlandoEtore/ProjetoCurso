@@ -10,4 +10,4 @@ elif x > 0 and y > 0:
     print("Q1")
 elif x > 0 and y < 0:
     print("Q4")
-elif x
+# elif x
