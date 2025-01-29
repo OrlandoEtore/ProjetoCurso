@@ -1,0 +1,244 @@
+import math
+import string
+
+#number =float(input())
+
+#Para pegar uma lista de numeros que nao tem quantidade
+num = list(map(int,input().split()))
+print(num)
+
+#enves de usar format utiliza apenas o f, so que tem colocar a var dentro dos conchetes
+print(f'{x} + {y} = {z}') 
+
+#Aqui e pego duas var  
+x,y=map(float,input().split())
+
+
+
+#--------------------------
+#from math import sqrt
+#num = int(input('Digite um Numero:'))
+#raiz = sqrt(num)
+# print('A Raiz de {} e igual a {}'.format(num,raiz))
+#--------------------------
+
+
+#lista com os nomes
+nomes = [a,b,c,d]
+
+#essa funcao faz pegar os nomes de forma aleatorio e depois colocar um rank de ordem 
+random.shuffle(nomes)
+
+
+#funcao da bibloteca que pega a lista e faz o sorteio de maneira aleatorio do nome do aluno 
+sortiado = random.choice(nomes)
+
+""" 
+É igual a: a == b
+Não é igual a: a != b
+Menor que: a < b
+Menor ou igual a: a <= b
+Maior que: a > b
+Maior ou igual a: a >= b
+
+
+Python depende de recuo (espaço em branco no começo de uma linha) para definir escopo no código. Outras linguagens de programação geralmente usam chaves para esse propósito.
+Exemplo
+if As instruções não podem estar vazias, mas se por algum motivo você tiver uma ifinstrução sem conteúdo, insira-a passpara evitar erros.
+if b > a:
+  pass
+"""
+
+
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+
+
+
+"""
+O loop while
+Com o loop while podemos executar um conjunto de instruções desde que uma condição seja verdadeira.
+
+Exemplo
+"""
+i = 1
+
+while i < 6:
+  print(i)
+  i +=1
+
+#Com a instrução break podemos parar o loop mesmo se a condição while for verdadeira:
+
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+"""
+Um loop for é usado para iterar sobre uma sequência (que pode ser uma lista, uma tupla, um dicionário, um conjunto ou uma string).
+
+Isso é menos parecido com a palavra -chave for em outras linguagens de programação e funciona mais como um método iterador, como encontrado em outras linguagens de programação orientadas a objetos.
+
+Com o loop for podemos executar um conjunto de instruções, uma vez para cada item em uma lista, tupla, conjunto etc.
+"""
+
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+for x in "banana":
+  print(x)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+
+
+"""
+A função range()
+Para percorrer um conjunto de código um número especificado de vezes, podemos usar a função range() ,
+A função range() retorna uma sequência de números, começando em 0 por padrão, incrementando em 1 (por padrão) e terminando em um número especificado.
+
+"""
+
+for x in range(6):
+  print(x)
+
+"""A função range() incrementa a sequência em 1 por padrão, porém é possível especificar o valor do incremento adicionando um terceiro parâmetro: range(2, 30, 3 ) :
+
+Exemplo
+Incremente a sequência com 3 (o padrão é 1):
+2
+5
+8
+11
+14
+17
+20
+23
+26
+29
+"""
+
+for x in range(2, 30, 3):
+  print(x)
+
+"""
+Quebre o loop quando xfor 3 e veja o que acontece com o elsebloco:
+
+for x in range(6):
+  if x == 3: break
+  print(x)
+else:
+  print("Finally finished!")
+
+"""
+
+
+"""
+
+Loops aninhados
+Um loop aninhado é um loop dentro de um loop.
+
+O "loop interno" será executado uma vez para cada iteração do "loop externo":
+
+Exemplo
+Imprima cada adjetivo para cada fruta:
+
+Saida :
+maçã vermelha
+banana vermelha
+cereja vermelha
+maçã grande
+banana grande
+cereja grande
+maçã saborosa
+banana saborosa
+cereja saborosa
+
+"""
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+# Definindo o tamanho da matriz
+linhas = 3
+colunas = 3
+
+# Criando uma matriz vazia
+matriz = []
+
+# Preenchendo a matriz com valores
+for i in range(linhas):
+    # Cria uma nova linha
+    linha = []
+    for j in range(colunas):
+        # Adiciona um valor à linha (i * colunas + j + 1 para valores sequenciais)
+        linha.append(i * colunas + j + 1)
+    # Adiciona a linha à matriz
+    matriz.append(linha)
+
+# Imprimindo a matriz
+for linha in matriz:
+    print(linha)
+
+
+"""
+m Python, uma função é definida usando a palavra-chave def :
+
+ExemploO
+def my_function():
+  print("Hello from a function")
+
+"""
+
+fatiamento  de strings
+a frase recebe uma casa contando 0 ate o tamanho existe maneiras de fatiar ela 
+
+frase  = 'Curso em video Python'
+string[inicio:fim:passo]
+
+inicio: o índice do caractere onde o fatiamento começa (inclusivo).
+fim: o índice onde o fatiamento termina (exclusivo).
+passo: o valor do salto entre os caracteres.
+
+frase[0:5]     # Saída: 'Curso'
+frase[9:]     # Saída: 'video Python'
+frase[0:21:2] # Saída: 'Croe ie yhn' Aqui, estamos fatiando do índice 0 ao 20, pulando de 2 em 2 caracteres.
+
+frase  = 'Curso em video Python'
+len(frase) #mede o tamanho da frase
+frase.count('o') # conta quantos O aparece na variavel 
+frase.count('o',0,13) # conta de 0 a 13 igorando o ultimo numero entao ele iria ate o 12
+frase.find("deo") # ele vai ate encontrar a palavra 
+'Curso' in frase # ele vai procurar se existe a palavra curso dentro da variavel retorna true ou false
+frase.replace('Python','Android') # subistuir a palava python por android
+frase.upper() # deixa tudo MAISCULo
+frase.lower()# deixa tudo minusculo
+frase.capitalize()# # Saída: 'Curso em video python' Converte o primeiro caractere da string para maiúscula e todos os outros caracteres para minúscula.
+frase.title() # # Saída: 'Curso Em Video Python' : Converte o primeiro caractere de cada palavra da string para maiúscula.
+frase.strip()# Remove os espaços em branco do início e do final da string # Saída: 'Curso em video Python'
+frase.rtrip()# Remove os espaços em branco apenas do final (direita) da string.
+frase.ltrip()# Remove os espaços em branco apenas do início (esquerda) da string.
+frase.split()#Divide a string em uma lista de palavras, usando os espaços como delimitadores. Cada palavra se torna um elemento da lista. # Saída: ['Curso', 'em', 'video', 'Python']
+'-'.join(frase)# Une os elementos de uma sequência (por exemplo, lista) em uma única string, usando o caractere ou sequência especificada como delimitador. Aqui, é usado o - para unir cada caractere da string.
+ # Saída: 'C-u-r-s-o- -e-m- -v-i-d-e-o- -P-y-t-h-o-n'
+
+
+C u r s o   e m   v  i d e o   P   y t  h  o  n
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
