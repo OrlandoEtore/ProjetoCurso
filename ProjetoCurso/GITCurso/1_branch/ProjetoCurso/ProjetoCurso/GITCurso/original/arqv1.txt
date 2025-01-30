@@ -3,13 +3,8 @@ a
 b
 <div class="card text-left">
   <img class="card-img-top" src="
-  
-  
-  div
-  div
-  " alt="">
-  <div class="card-body">
-    <h4 class="card-title">Title</h4>
-    <p class="card-text">Body</p>
   </div>
 </div>
+
+c d 
+<i class="fa fa-edge" aria-hidden="true"></i>
