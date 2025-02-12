@@ -8,5 +8,5 @@ elif x == 0:
 elif y == 0:
     print("Eixo X")
 elif x > 0:
-    
+    print("Eixo X")
     
