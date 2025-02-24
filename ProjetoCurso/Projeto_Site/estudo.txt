@@ -9,3 +9,20 @@ tags
 Fundamentos do Html
 
 tags 
+
+box model -
+1. Content (Conteúdo)
+É a área onde o texto, imagens ou outros conteúdos são exibidos.
+As propriedades width e height controlam o tamanho dessa área, por padrão.
+
+2. Padding (Espaçamento Interno)
+É o espaço entre o conteúdo e a borda.
+Aumentar o padding faz a área "aparentar" maior, pois afasta o conteúdo da borda, mas não altera o tamanho do conteúdo.
+
+3. Border (Borda)
+Envolve o padding e o conteúdo.
+Pode ser estilizada com diferentes larguras, cores e estilos (sólida, pontilhada, etc.).
+
+4. Margin (Margem)
+É o espaço entre a borda do elemento e os elementos vizinhos.
+Diferente do padding e da borda, a margin "separa" o elemento dos outros, não afetando o seu tamanho interno.
