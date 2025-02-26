@@ -1,14 +1,52 @@
 
-h1 {
-    background-color: red;
+
+
+body{
+    margin: 0;
+    width: 400px;
+    height: 400px;
+   
 }
 
 p{
-    transition: all;
+    color: blue
+}
+
+
+.conteiner{
+    padding: 50px;
+    border-radius: 300px;
+    width: 400px;
+    height: 400px;
 
 }
 
-.div-tam{
-    width: 20%;
-   e
+
+
+
+.div-float{
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 15%;
+    
+}
+
+.div-float-1{
+    background-color: rgb(25, 0, 255);
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin: 50px;
+
+}
+
+.div-float-2{
+    background-color: rgb(255, 0, 0);
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin: 50px;
 }

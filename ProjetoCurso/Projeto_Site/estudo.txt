@@ -26,3 +26,13 @@ Pode ser estilizada com diferentes larguras, cores e estilos (sólida, pontilhad
 4. Margin (Margem)
 É o espaço entre a borda do elemento e os elementos vizinhos.
 Diferente do padding e da borda, a margin "separa" o elemento dos outros, não afetando o seu tamanho interno.
+
+
+posicoes
+
+float 
+
+overflow: auto
+
+clear
+
