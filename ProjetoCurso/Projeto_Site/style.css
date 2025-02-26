@@ -3,7 +3,12 @@ h1 {
     background-color: red;
 }
 
+p{
+    transition: all;
 
-h1 {
-   
+}
+
+.div-tam{
+    width: 20%;
+   e
 }
