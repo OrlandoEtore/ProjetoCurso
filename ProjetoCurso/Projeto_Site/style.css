@@ -1,0 +1,15 @@
+html{
+    font-family:Helvetica, sans-serif;
+}
+
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(/ProjetoCurso/Projeto_Site/imgs/IMG001.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    position: relative;
+
+}
+
