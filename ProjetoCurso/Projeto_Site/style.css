@@ -86,3 +86,25 @@ html {
 	margin-bottom: 30px;
 	font-size: 24px;
 }
+
+
+  /* Secao de  Servicos */
+
+.services-container {
+	max-width: 1200px;
+	padding: 30px 10%;
+	padding-bottom: 0;
+}
+
+.service-box{
+	width: 100%;
+	position: relative;
+	clear:both;
+	height: 150px;
+	margin-bottom: 30px;
+}
+
+.service-box:last {
+	margin-bottom:0;
+}
+

@@ -38,14 +38,60 @@ Diferente do padding e da borda, a margin "separa" o elemento dos outros, não a
 <summary>- Define um título para o <details>elemento
 
 
+Posições no CSS:
 
+static (Padrão) Todos os elementos HTML têm position: static; por padrão. Isso significa que eles aparecem na ordem normal do fluxo do documento.
 
+relative (Relativa)
+O elemento é posicionado relativamente à sua posição original. Você pode mover o elemento usando top, left, right ou bottom.
 
-posicoes
+absolute (Absoluta)
+O elemento sai do fluxo normal e é posicionado em relação ao primeiro elemento ancestral com position: relative;. Se não houver ancestral relative, ele será posicionado em relação ao <html>.
 
-float 
+fixed (Fixa)
+O elemento fica fixo na tela, mesmo quando o usuário rola a página.
+
+sticky (Grudenta)
+O elemento age como relative até que a rolagem atinja um certo ponto, depois ele se comporta como fixed.
+
+explica como funciona essa questao dos : depois de com nesse explo .service-box:last 
+Os dois-pontos : indicam um pseudo-seletor, que permite estilizar elementos com base em seu estado ou posição.
+
+🔹 last-child
+Seleciona o último filho dentro de um elemento pai.
+
+.service-box:last-child {
+  background-color: red;
+}
+<div class="service-box">Item 1</div>
+<div class="service-box">Item 2</div>
+<div class="service-box">Item 3</div>
+
+A última <div class="service-box"> (Item 3) terá o fundo vermelho.
+
+🔹 last-of-type
+Seleciona o último elemento de um determinado tipo dentro do pai.
+p:last-of-type {
+  color: blue;
+}
+<p>Parágrafo 1</p>
+<p>Parágrafo 2</p>
+<div>Não é um parágrafo</div>
+<p>Parágrafo 3</p>
+Apenas o último <p> (Parágrafo 3) será azul.
+
+float : 
+O float é usado para posicionar elementos ao lado de outros, empurrando-os para a esquerda ou direita.
 
 overflow: auto
+Define o que acontece quando o conteúdo de um elemento excede seu tamanho definido.
 
 clear
+Se um elemento estiver abaixo de um float, ele pode ser empurrado para o lado indesejadamente.
+O clear força o elemento a ficar abaixo dos elementos flutuantes.
+
+max-width : 
+Define um limite máximo para a largura de um elemento.
+Importante para responsividade, pois evita que elementos fiquem muito grandes.
+
 
