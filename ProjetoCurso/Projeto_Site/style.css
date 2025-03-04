@@ -3,13 +3,68 @@ html{
 }
 
 
-.banner{
+.banner {
+	width: 100%;
+	height: 600px;
+	background-image: url(/ProjetoCurso/Projeto_Site/imgs/IMG001.jpg);
+	background-position: center;
+	position: relative;
+}
+
+
+.box-container {
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	position: absolute;
+	right: 100px;
+	bottom: 250px;
+}
+
+
+.box-background {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .8;
+	position: relative;
+}
+
+.box-banner-title {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 0;
+	color: #FFF;
+	padding-top: 65px;
+}
+
+.box-banner-title h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.box-banner-title p {
+    font-size: 20px;
+}
+
+.company-info-container {
     width: 100%;
-    height: 600px;
-    background-image: url(/ProjetoCurso/Projeto_Site/imgs/IMG001.jpg);
-    /* background-repeat: no-repeat; */
-    background-position: center;
-    position: relative;
+	height: 100%;
+	background-color: #000000;
+	opacity: .5;
+	
+
+}
+.company-info-titlebox  {
+	position: absolute;
+	padding-left: 10%;
+
 
 }
 
+.company-info-titlebox p,h2  {
+	color:#FFF;
+
+
+}
