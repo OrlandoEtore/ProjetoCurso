@@ -95,5 +95,9 @@ Define um limite máximo para a largura de um elemento.
 Importante para responsividade, pois evita que elementos fiquem muito grandes.
 
 
+max-width : 
+Define um limite máximo para a largura de um elemento.
+Importante para responsividade, pois evita que elementos fiquem muito grandes.
+
 line-height
 box-sizing:
