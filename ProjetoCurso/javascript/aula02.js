@@ -7,4 +7,7 @@ console.log(typeof lista);
 const itens = ["Matheus", true,2, 4.13];
 console.log(itens);
 
+// 2 - mais sobre arrays
+const arr = ["a", "b", "c", "d"];
 
+console.log(arr[0]);
