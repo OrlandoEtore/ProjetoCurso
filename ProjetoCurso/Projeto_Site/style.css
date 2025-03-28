@@ -176,6 +176,12 @@ html {
 }
 
 .about-container {
-	
-	
+	max-width: 1200px;
+	padding: 30px 10%;
+	position: relative;
+	clear: both;
+}
+
+.about-container	 {
+
 }
