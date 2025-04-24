@@ -171,7 +171,7 @@ html {
 
 /* Sobre a empresa */
 .footer-container {
-	background-image: url(/ProjetoCurso/Projeto_Site/imgs/IMG001.jpg);
+	background-image: url(/ProjetoCurso/Projeto_Site/imgs/rodape.jpg);
 	background-position: center;
 }
 
@@ -182,7 +182,3 @@ html {
 	clear: both;
 }
 
-.about-container	 {
-	clear: both;
-
-}
