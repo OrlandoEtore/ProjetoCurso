@@ -1,0 +1,11 @@
+tipos de var int,float,bool e outras 
+
+
+maneira de pegar a variavel 
+{nome=}
+Formatacao 
+
+f string 
+paramentro
+paramentro nomeado
+meteado
