@@ -9,3 +9,86 @@ f string
 paramentro
 paramentro nomeado
 meteado
+
+1. Tipos de Variáveis em Python
+
+# int -> números inteiros (sem casas decimais)
+idade = 25          # Exemplo: 10, -7, 0
+
+# float -> números decimais
+altura = 1.75       # Exemplo: 3.14, -2.0, 0.5
+
+# bool -> valores booleanos (verdadeiro ou falso)
+ligado = True       # ou False
+
+# str -> textos (strings)
+nome = "João"       # ou 'João'
+
+# list → Lista (coleção de valores)
+Uma lista pode guardar vários valores de uma vez, separados por vírgula e entre colchetes [].
+frutas = ["maçã", "banana", "uva"]
+print(frutas[0])  # mostra: maçã
+
+# tuple → Tupla (lista que não muda)
+Parecida com a lista, mas não pode ser alterada. É imutável.
+cores = ("vermelho", "azul", "verde")
+
+# dict → Dicionário (pares chave: valor)
+Guarda dados com nome e valor, tipo uma ficha.
+pessoa = {
+    "nome": "Carlos",
+    "idade": 30,
+    "cidade": "São Paulo"
+}
+
+print(pessoa["nome"])  # mostra: Carlos
+
+# set → Conjunto (valores únicos, sem ordem)
+Sem valores repetidos e sem ordem garantida.
+numeros = {1, 2, 3, 2, 1}
+print(numeros)  # resultado: {1, 2, 3}
+
+
+
+
+
+2. Como mostrar uma variável na tela (print)
+nome = "Maria"
+print(nome)  # Mostra: Maria
+
+
+3. f-string (formatação de strings)
+nome = "Carlos"
+idade = 30
+print(f"Meu nome é {nome} e tenho {idade} anos.")
+
+
+✅ 4.Mostrar o nome da variável e o valor: {variavel=}
+nome = "Ana"
+print(f"{nome=}")  # Resultado: nome='Ana'
+
+✅ 5. Parâmetros e parâmetros nomeados
+Parâmetros são os valores passados para uma função.
+
+def saudacao(nome):
+    print(f"Olá, {nome}!")
+
+saudacao("João")
+
+
+Parâmetros nomeados (keyword arguments):
+
+ def mostrar_dados(nome, idade):
+    print(f"Nome: {nome}, Idade: {idade}")
+
+mostrar_dados(nome="Lucas", idade=22)
+
+✅ 6. Métodos 
+Métodos são funções que pertencem a um tipo específico de dado. Ex: o tipo str (string) tem métodos próprios como .upper(), .lower(), etc.
+texto = "python"
+
+print(texto.upper())  # PYTHON
+print(texto.capitalize())  # Python
+print(texto.replace("py", "ja"))  # jathon
+
+
