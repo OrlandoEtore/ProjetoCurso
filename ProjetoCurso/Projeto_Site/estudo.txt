@@ -119,3 +119,5 @@ line-height
 box-sizing:
 
 
+transition
+cursor
