@@ -1,14 +1,8 @@
 
 O que e Bootstrap? 
+Bootstrap é um framework front-end que ajuda você a criar sites bonitos e responsivos rapidamente, sem precisar escrever muito CSS do zero. 
+Ele oferece uma série de classes pré-definidas para botões, grids, cards, textos, formulários e muito mais.
 
-
-Fundamentos do Html
-
-tags 
-
-Fundamentos do Html
-
-tags 
 
 box model -
 1. Content (Conteúdo)
@@ -26,6 +20,19 @@ Pode ser estilizada com diferentes larguras, cores e estilos (sólida, pontilhad
 4. Margin (Margem)
 É o espaço entre a borda do elemento e os elementos vizinhos.
 Diferente do padding e da borda, a margin "separa" o elemento dos outros, não afetando o seu tamanho interno.
+
++-----------------------------+
+|         Margin             |
+|  +---------------------+   |
+|  |      Border         |   |
+|  |  +-------------+    |   |
+|  |  |  Padding    |    |   |
+|  |  |  +------+   |    |   |
+|  |  |  |Content|  |    |   |
+|  |  |  +------+   |    |   |
+|  |  +-------------+    |   |
+|  +---------------------+   |
++-----------------------------+
 
 
 <header>- Define um cabeçalho para um documento ou uma seção
@@ -56,6 +63,15 @@ O elemento age como relative até que a rolagem atinja um certo ponto, depois el
 
 explica como funciona essa questao dos : depois de com nesse explo .service-box:last 
 Os dois-pontos : indicam um pseudo-seletor, que permite estilizar elementos com base em seu estado ou posição.
+
+✅ Pseudo-seletores com : (continuação e reforço)
+
+Pseudo-seletor	O que faz?
+:hover	Aplica estilo quando o mouse está em cima
+:active	Quando o elemento está sendo clicado
+:first-child	Primeiro filho de um pai
+:nth-child(n)	Aplica ao filho de número n
+:not(selector)	Seleciona tudo que não é o seletor indicado
 
 🔹 last-child
 Seleciona o último filho dentro de um elemento pai.
